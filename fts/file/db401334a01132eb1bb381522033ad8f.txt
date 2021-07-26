@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+using namespace std;
+struct flight
+{
+
+void fun1(string PNR)
+{ 
+ cout<<"Flight: Chennai(MAA) to London(LCY)"<<endl;   
+cout<<"Entered PNR is "<<PNR;
+}
+ void fun2(string PNR)
+{ 
+ cout<<"Flight: Chennai(MAA) to Sydney(SYD)"<<endl;   
+cout<<"Entered PNR is "<<PNR;
+  }  
+void fun3(string PNR)
+{ 
+ cout<<"Flight: Chennai(MAA) to Singapore(SIN)"<<endl;
+ cout<<"Entered PNR is "<<PNR;
+}
+int main()
+{
+  cout<<"Enter Flight Name: "<<endl;
+  string flname;
+  cin>>flname;
+  //cout<<"\n";
+  //cout<<flname;
+  string a,b,c;
+  string f1="UK833";
+  string f2="AI269";
+  string f3="SG184";
+  cout<<"Enter PNR Number:"<<endl;
+  string PNR;
+  cin>>PNR;
+  //cout<<PNR<<endl;
+  //cout<<f1<<f2<<f3;
+  if(flname.compare(f1)==0)
+  {
+     fun1(PNR); 
+  }
+  if(flname.compare(f2)==0)
+  {
+      fun2(PNR); 
+  }
+  if(flname.compare(f3)==0)
+  {
+      fun3(PNR);
+  }
+    return 0;
+}
